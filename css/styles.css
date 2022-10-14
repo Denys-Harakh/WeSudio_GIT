@@ -1,0 +1,253 @@
+:root{
+    --primary-tex-color:#212121;
+    --title-text-color:#757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --background-color: #2F303A;
+    --logo-color:#000000;
+    --button-hover-color: #188CE8;
+    --filtr-background-color:#F5F4FA;
+}
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.list{
+    list-style: none;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--primary-tex-color);
+    background-color: var(--primary-white-color);
+}
+
+ /* Логотип Шапка*/
+.logo{ 
+    color: var(--logo-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.accent{
+    color:var(--accent-color);
+}
+/* Навигация */
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color:var(--accent-color);
+}
+.site-nav .link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: var(--primary-tex-color);
+}
+
+/* Контакты */
+.contacts .link{
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus{
+    color: var(--accent-color);
+}
+/* Герой */
+.hero{
+    background-color: var(--background-color);
+    width: 1600px;
+    height: 600px;
+}
+.hero .title{
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    position: absolute;
+    width: 696px;
+    height: 120px;
+
+    margin-top: 200px;
+    margin-bottom: 280px;
+    margin-left: 452px;
+    margin-right: 452px;
+    
+}
+.hero button{
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    margin-top: 360px;
+    margin-bottom: 200px;
+    margin-left: 692px;
+    margin-right: 692px;
+
+    cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus{
+    background-color: var(--button-hover-color);
+}
+button .text{
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 152px;
+    height: 30px;
+}
+
+/* Преимущества */
+.advantage .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.advantage .text{
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.directions .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* Наша команда */
+.team .profession{
+    color: var(--title-text-color);
+}
+.team .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}  
+.complex-list .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Подвал */
+
+/* Логотип Подвал */
+.logo-footer{
+    color: var(--primary-white-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+ }
+footer{
+    background-color: var(--background-color);
+    width: 1600px;
+    height: 252px;
+}
+.map-link{
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+.map-link:hover,
+.map-link:focus{
+    color: var(--accent-color);
+}
+
+footer .link{
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* Страница Портфолио */
+main{
+    background-color: var(--primary-white-color)
+}
+/* Кнопки */
+.button button{
+    background-color: var(--filtr-background-color);
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button .link:hover,
+.button .link:focus,
+.button .link:active{
+color:var(--primary-white-color);
+background-color: var(--accent-color);
+cursor: pointer;
+}
+/* Проэкты */
+.project .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--primary-tex-color);
+}
+.project p{
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+.project .link{
+    text-decoration: none;
+}
